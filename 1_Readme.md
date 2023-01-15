@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
 ## -> What is Emmet?
 
 Emmet is a free add-on for your text editor that allows you to type shortcuts that are then expanded into full pieces of code. By using Emmet, email designers type less, saving both keystrokes and time when building a campaign. Also, relying on Emmet’s autocompletion means fewer typos and missing tags, leading to more robust emails.
@@ -54,7 +54,7 @@ Improving website security - A CDN may improve security by providing DDoS mitiga
 At its core, a CDN is a network of servers linked together with the goal of delivering content as quickly, cheaply, reliably, and securely as possible. In order to improve speed and connectivity, a CDN will place servers at the exchange points between different networks.
 
 These Internet exchange points (IXPs) are the primary locations where different Internet providers connect in order to provide each other access to traffic originating on their different networks. By having a connection to these high speed and highly interconnected locations, a CDN provider is able to reduce costs and transit times in high speed data delivery.
-=======
+=========
 ## Importent Links for reference 
 * Pracel:- https://parceljs.org/
 * Browserlist for dev:- https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z
@@ -103,4 +103,4 @@ A module bundler is a tool that takes pieces of JavaScript and their dependencie
 // yarn global add parcel-bundler
 
 * Many front-end developers have become frustrated with some of the complexities involved with building web apps today. It’s pretty standard practice to include some kind of build or bundling tool in a front-end workflow, thus many developers have looked into using a front-end tool like webpack/Rollup/Parcel.
->>>>>>> Chapter2
+>>>>>>>>> Temporary merge branch 2
