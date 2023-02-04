@@ -16,7 +16,7 @@ const ResturanatCard = ({
         />
         <h2>{name}</h2>
         <h3>{cuisines.join(" , ")}</h3>
-        <h4>{lastMileTravelString} Minutes </h4>
+        <h4>{lastMileTravelString}  </h4>
       </div>
     );
   };
