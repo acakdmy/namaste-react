@@ -3,34 +3,14 @@ import ReactDOM from "react-dom/client";
 import Header from "./components/Header"
 import Body from "./components/Body";
 import Footer from "./components/Footer";
-
-/*
-    Header
-      - Logo(Title)
-      - Nav Items (Right side)
-      -Cart
-    Body
-      -Search bar
-      - ResurantList
-        -ResturanatCard
-          -Image
-          -Name
-          -Rating
-          -Cusines
-    Footer
-      - Link
-      - Copyright
-    */
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Error from "./components/Error";
+import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
+import ResturantsMenu from "./components/ResturantsMenu";
 
 
 
-
-
-// Config Driven UI
-
-
-
-// Optional chaining  = ?   in Javascript
 
 
 
@@ -38,12 +18,40 @@ const AppLayout = () => {
   return (
     <>
       <Header />
-      <Body />
+      <Outlet/>
       <Footer />
     </>
   );
 };
 
+const appRouter = createBrowserRouter([
+  {
+    path:"/",
+    element:<AppLayout/>,
+    errorElement:<Error/>,
+    children:[
+      {
+        path:"/",
+        element:<Body/>,
+      },
+      {
+        path:"/about",
+        element:<About/>,
+      },
+      {
+        path:"/contact",
+        element:<Contact/>,
+      },
+      {
+        path:"/restaurant/:resId",
+        element:<ResturantsMenu/>,
+      },
+
+    ]
+  },
+ 
+])
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<AppLayout />);
+root.render(<RouterProvider router={appRouter}/>);
